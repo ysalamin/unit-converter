@@ -1,0 +1,26 @@
+:root {
+    --blue: #6943FF;
+    --whitegray: #F4F4F4;
+    --title: #353535;
+    --paragraph: #5A537B;
+    --convert: #3D3D3D;
+    --border: #B295FF;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+#container {
+    background-color: var(--whitegray);
+}
+
+.top-section{
+    background-color: var(--blue);
+}
+
+.bottom-section{
+    background-color: white;
+    padding: 25px;
+}
