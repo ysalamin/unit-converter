@@ -5,7 +5,7 @@ A simple and responsive unit conversion tool built with vanilla HTML, CSS, and J
 ## Live Demo
 
 You can try out the live version of this project here:
-**[https://ysalamin.github.io/password-generator/]**
+**[https://ysalamin.github.io/unit-converter/]**
 
 ---
 ## Key Features
