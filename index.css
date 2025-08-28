@@ -46,6 +46,9 @@ button {
     border-radius: 5px;
     border: none;
     cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: #6943FF;
 }
 
 #input-el {
@@ -56,10 +59,28 @@ button {
     font-style: bold;
     font-size: xxx-large;
     background-color: var(--blue);
-    border: 1px solid var(--border)
+    border: 3px solid var(--border);
+    border-radius: 4px;
 }
 
 .bottom-section{
+    background-color: var(--whitegray);
+    padding: 25px;
+}
+
+.field {
     background-color: white;
     padding: 25px;
+    margin: 20px;
+    border-radius: 2px;
+}
+
+h3 {
+    color:#5A537B
+}
+
+p {
+    color: var(--paragraph);
+    
+    
 }
