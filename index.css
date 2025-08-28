@@ -1,3 +1,4 @@
+/* --- Root Variables / Design Tokens --- */
 :root {
     --blue: #6943FF;
     --whitegray: #F4F4F4;
@@ -7,67 +8,32 @@
     --border: #B295FF;
 }
 
+/* --- General Styling & Resets --- */
 body {
     margin: 0;
     text-align: center;
     font-family: "Inter", sans-serif;
-}
-
-h1 {
-    color: white;
-    font-style: Inter;
-    padding-top: 20px;
-}
-
-#container {
     background-color: var(--whitegray);
 }
 
-.top-section{
+/* --- Layout Containers --- */
+#container {
+    background-color: var(--whitegray);
+    width: 550px; /* Example fixed width */
+    margin: 50px auto; /* Center the container on the page */
+}
+
+.top-section {
     background-color: var(--blue);
-    padding-bottom: 15px
+    padding: 30px 15px;
 }
 
-input,
-button {
-  display: block;
-  margin-top: 10px; /* Optionnel : pour ajouter un peu d'espace entre eux */
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
-  max-width: 150px;
-}
-
-#btn{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 5px;
-    border: none;
-    cursor: pointer;
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    color: #6943FF;
-}
-
-#input-el {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    color: white;
-    font-style: bold;
-    font-size: xxx-large;
-    background-color: var(--blue);
-    border: 3px solid var(--border);
-    border-radius: 4px;
-}
-
-.bottom-section{
+.bottom-section {
     background-color: var(--whitegray);
     padding: 25px;
 }
 
+/* --- Components --- */
 .field {
     background-color: white;
     padding: 25px;
@@ -75,12 +41,61 @@ button {
     border-radius: 2px;
 }
 
+input,
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  max-width: 150px;
+}
+
+#btn {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    color: var(--convert);
+}
+
+#input-el {
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    font-weight: 800; /* 'bold' is a valid value, 800 is more specific */
+    font-size: 58px; /* xxx-large is valid but less precise */
+    background-color: var(--blue);
+    border: 3px solid var(--border);
+    border-radius: 4px;
+}
+
+/* --- Typography --- */
+h1 {
+    color: white;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
 h3 {
-    color:#5A537B
+    color: var(--paragraph);
 }
 
 p {
-    color: var(--paragraph);
-    
-    
+    color: var(--convert);
+}
+
+#input-el::placeholder {
+  color: var(--whitegray);
+}
+
+#input-el::-webkit-input-placeholder {
+  color: var(--whitegray);
+}
+
+#input-el::-moz-placeholder {
+  color: var(--whitegray);
 }
